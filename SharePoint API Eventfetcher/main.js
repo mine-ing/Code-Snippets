@@ -6,7 +6,7 @@ String.prototype.replaceW = function(index, str) { //Function, that replaces a c
 }
 const legalChar = ['"', "s", "p", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]; //list of characters that come before a : in the output.json
 var isLegalChar = false;
-https.get('https://USERNAME:PASSWORD@sharepoint.tuhh.de/sites/fks/_api/web/lists/getbytitle(\'CALENDAR_NAME\')/items', (response) => { //make a(n) https request
+https.get('https://USERNAME:PASSWORD@sharepoint.URL.TO/SITE/_api/web/lists/getbytitle(\'CALENDAR_NAME\')/items', (response) => { //make a(n) https request
     let res = '';
     response.on('data', (chunk) =>{ //data comes in packets, wich have to be combined to be further processed
         res += chunk;
