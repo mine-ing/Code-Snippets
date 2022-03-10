@@ -1,0 +1,33 @@
+* {
+  font-family: helvetica, arial, sans-serif;
+  font-size: 1rem;
+}
+body {
+  perspective: 500px;
+}
+/* lineup class and keyframes */
+.lineUp {
+  animation: 3s anim-lineUp ease-out 1;
+}
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    bottom: 0px;
+    transform: translateY(80%);
+  }
+  10% {
+    opacity: 1;
+    bottom: 0px;
+    transform: translateY(0%);
+  }
+  90% {
+    opacity: 1;
+    bottom: 0px;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 0;
+    bottom: 0px;
+    transform: translateY(-80%);
+  }
+}
