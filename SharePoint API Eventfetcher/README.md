@@ -1,3 +1,3 @@
-# Get Sharepoint List
+# Sharepoint API Eventfetcher
 
-Gets an Eventslist from Sharepoint and writes the xml contents of that list into a properly formatted .json file
+Gets a calendar from SharePoint and writes the xml contents of that calendar into a properly formatted .json file
